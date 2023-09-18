@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style/style.css">  <title>E-commerce product page</title>
+  </head>
+<body>
+
+  <header>
+      <div class="wrapper">
+        <div class="mobile-navigation">
+          <div class="mobile-menu">
+            <div class="close-button" onclick="menuClose()">
+              <i class="fa-solid fa-xmark fa-lg"></i>
+            </div>
+            <div class="list-nav mobile">
+              <ul>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="list-nav desktop">
+            <ul>
+              <li><a href="#">Collections</a></li>
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="hamburger-menu" onclick="menuOpen()"></div>
+          <div class="logo">
+            <img src="./images/logo.svg" alt="logo">
+          </div>
+          <div class="nav-cart-profile">
+            <div class="cart-logo" onclick="cartOpen()"><i class="fa-solid fa-cart-shopping"></i>
+            <div class="amount-of-items">0</div>
+            </div>
+            <img class="profile-picture" src="./images/image-avatar.png" alt="profile picture">
+            <div class="cart">
+              <div class="wrapper">
+                <h4>Cart</h4>
+                <span class="line"></span>
+                <div class="cart-content">
+                  <div class="product-in-cart">
+                    <img class="thumbnails" src="./images/image-product-1-thumbnail.jpg" alt="product thubmnail">
+                    <div class="name-of-product">
+                      <p>Autumn limited Edtion...</p>
+                      <div class="price-tags">
+                        <p class="price">&#36;125.00</p>
+                        <p class="amount"> x </p>
+                        <p class="total-price"></p>
+                      </div>
+                    </div>
+                    <img class="delete-icon" src="./images/icon-delete.svg" alt="delete product">
+                    <button class="checkout">Checkout</button>
+                  </div>
+                  <div class="empty-cart">
+                    <p>Your cart is empty.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </header>
+  <section id="hero">
+    <div class="slideshow">
+      <img class="mySlides" src="./images/image-product-1.jpg" alt="sneakers">
+      <img class="mySlides" src="./images/image-product-2.jpg" alt="sneakers">
+      <img class="mySlides" src="./images/image-product-3.jpg" alt="sneakers">
+      <img class="mySlides" src="./images/image-product-4.jpg" alt="sneakers">
+      <div class="arrows">
+        <div class="wrapper">
+          <a href="#" class="previous" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left"></i></a>
+          <a href="#" class="next" onclick="plusSlides(1)"><i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="previews">
+      <img class="thumbails" src="./images/image-product-1-thumbnail.jpg" alt="sneakers" onclick="currentSlide(1)">
+      <img class="thumbails" src="./images/image-product-2-thumbnail.jpg" alt="sneakers" onclick="currentSlide(2)" >
+      <img class="thumbails" src="./images/image-product-3-thumbnail.jpg" alt="sneakers" onclick="currentSlide(3)" >
+      <img class="thumbails" src="./images/image-product-4-thumbnail.jpg" alt="sneakers" onclick="currentSlide(4)" >
+    </div>
+  </section>
+  <section id="main">
+    <div class="wrapper">
+      <div class="name-of-product">
+        <h3>Sneaker company</h3>
+        <h1>Fall Limited Edition Sneakers</h1>
+      </div>
+      <p class="description-of-product">
+        These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.      
+      </p>
+      <div class="price-of-product">
+        <div class="price">$125.00</div>
+        <div class="sale">50%</div>
+        <div class="old-price">$250.00</div>
+      </div>
+      <div class="quantity">
+        <img class="minus" src="./images/icon-minus.svg" alt="minus">
+        <div class="number-of-quantity">0</div>
+        <img class="plus" src="./images/icon-plus.svg" alt="plus" >
+      </div>
+      <div class="cta-cart" onclick="cartOpen()" >
+        <i class="fa-solid fa-cart-shopping"></i>
+        <a href="#">Add to cart</a>
+      </div>
+    </div>
+  </section>
+
+<script src="./index.js"></script>
+<script src="https://kit.fontawesome.com/05ec568796.js" crossorigin="anonymous"></script>
+</body>
+</html>
